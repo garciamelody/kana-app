@@ -1,0 +1,130 @@
+/******************************************
+/* CSS
+/*******************************************/
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --hue-neutral: 45;
+  --hue-wrong: 20;
+  --hue-correct: 75;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  background: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.container {
+  width: 500px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 60px 60px 10px 60px;
+  box-shadow: rgb(154, 139, 27) 0 0 10px 2px;
+  margin-bottom: 60px;
+  margin-top: 30px;
+  align-self: center;
+}
+
+.btnGrid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  --hue : var(--hue-neutral);
+  border: 3px solid hsl(var(--hue), 170%, 30%);
+  background-color: hsl(var(--hue), 100%, 35%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+}
+
+.btnGrid .btn {
+  height: 100px;
+  padding: 20px;
+  font-size: 4rem;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  border-color: white;
+}
+
+.btn.correct {
+  --hue:var(--hue-correct);
+  color: black;
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.startBtn, .nextBtn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+#question {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 6rem;
+  text-align: center;
+  box-shadow: rgb(154, 139, 27) 0 0 10px 2px;
+  border-radius: 20px;
+  background: beige;
+  height: auto;
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+}
+
+
+.progressBar {
+  width: 20rem;
+  height: 3rem;
+  border: 0.2rem solid rgb(154, 139, 27);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.progressBarFull {
+  height: 100%;
+  background: linear-gradient(#b88404,beige);
+  width: 0%;
+  transition: 0.7s ease;
+}
+
+.progressText {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0px;
+  padding-top: 20px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
