@@ -11,8 +11,8 @@ After answering each question you'll be shown the correct and incorrect answers.
 ![Screen Shot 2023-02-05 at 10 05 53 AM](https://user-images.githubusercontent.com/102616304/216830501-578589bf-30d8-457d-b4ac-f05ac864b076.png)
 
 ## What's it Made With?
-HTML, Javascript, and CSS
+HTML, JavaScript, and CSS
 
 ## How Does it Work?
-Within the Javascript code, there is an array of question objects. Each object contains a question and all corresponding multiple-choice answers. These questions get shuffled and shown to the user. A question counter keeps track of the number of questions answered and uses that information to fill the meter accordingly. The question counter is reset to 0 once the quiz is completed and restarted. Want to practice your kana? Give it a try 
+Within the JavaScript code, there is an array of question objects. Each object contains a question and all corresponding multiple-choice answers. These questions get shuffled and shown to the user. A question counter keeps track of the number of questions answered and uses that information to fill the meter accordingly. The question counter is reset to 0 once the quiz is completed and restarted. Want to practice your kana? Give it a try 
 <a href="https://kanaapp.netlify.app/">here</a>.
